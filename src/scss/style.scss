@@ -20,11 +20,21 @@ body {
 a {
   .card {
     color: white;
-    text-decoration: none;
   }
 }
+.img-overlay {
+  padding: 0px !important;
+  max-height: 200px;
+  img {
+    max-height: 200px;
+    filter: blur(3px);
+  }
+}
+.text-black {
+  color: black !important;
+}
 #news-card {
-  height: 85vh;
+  min-height: 85vh;
   @media (min-width: 960px) {
     position: absolute;
     width: 96%;
