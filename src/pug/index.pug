@@ -1,11 +1,40 @@
-extends include/_base
+extends include/base
 
 block title
-  title pug-html-scss-ts-template🐶
+  title Home | NISER - Sports Club
 
 block append body
-  // Place your content here
-  // written in the body tag
-  h1.title gulp4-pug-scss-ts-template🐶
-  p updated with love by
-  a(href="https://deshmukh.ml") Abhishek Anil Deshmukh
+  .container
+    .card
+      h1 NISER Student Affairs
+    .row
+      .col-lg-4
+        .card
+          img(src="https://via.placeholder.com/70").card-img-top
+          .card-text Name and details and age and stuff, really i just have to fill this so it looks good in ps, thats literally all
+      .col-lg-8
+        .card#message
+          h2 Message
+          p Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. A diam sollicitudin tempor id eu. Eget mauris pharetra et ultrices neque ornare aenean. Quisque id diam vel quam elementum pulvinar etiam non quam. Porttitor rhoncus dolor purus non enim praesent elementum facilisis leo. Tristique et egestas quis ipsum suspendisse ultrices gravida dictum. Aliquet enim tortor at auctor urna nunc id. Ut tristique et egestas quis ipsum suspendisse ultrices. Morbi tristique senectus et netus. Velit dignissim sodales ut eu.
+        .card#news-card
+          h2.mb-4 News/Events
+          a(href="#")
+            h3 News heading
+            p.text-muted News text coz why not you know
+          a(href="#")
+            h3 News heading
+            p.text-muted News text coz why not you know a little more to see how long text responds
+      .col-lg-4
+        a(href="#")
+          .card
+            h2 Student Gymkhana
+        a(href="#")
+          .card
+            h2 Sports and Yoga Club
+        a(href="#")
+          .card
+            h2 Arts and Culture Club
+        a(href="#")
+          .card
+            h2 Science and mathematics club
+

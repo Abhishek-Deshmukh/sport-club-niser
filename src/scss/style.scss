@@ -1,16 +1,45 @@
 // normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css
-@import "~normalize.css";
-@font-face{
+@import '~normalize.css';
+@font-face {
   font-family: 'Fira Sans';
   font-style: normal;
   font-weight: 400;
-  src: url(../static/fonts/FiraSans-Light.otf)
+  src: url(../static/fonts/FiraSans-Regular.otf);
 }
 
 body {
-  font-family: 'Fira Sans'
+  font-family: 'Fira Sans';
+  background: #120d1d;
+  color: white;
 }
-
-.title {
-  text-align: center;
+.card {
+  background: #4c377c;
+  margin: 10px 0px 10px 0px;
+  padding: 20px;
+}
+a {
+  .card {
+    color: white;
+    text-decoration: none;
+  }
+}
+#news-card {
+  height: 85vh;
+  @media (min-width: 960px) {
+    position: absolute;
+    width: 96%;
+  }
+  h3 {
+    font-size: 1.3rem;
+    line-height: 0.5;
+  }
+  a {
+    color: white;
+  }
+  p {
+    margin-bottom: 2rem;
+  }
+  ul {
+    list-style-type: none;
+  }
 }
