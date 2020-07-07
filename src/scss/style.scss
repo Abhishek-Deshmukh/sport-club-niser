@@ -15,7 +15,17 @@ body {
 .card {
   background: #4c377c;
   margin: 10px 0px 10px 0px;
-  padding: 20px;
+}
+.back {
+  position: absolute;
+  margin-left: 20px;
+  padding: 18px 20px 20px 15px;
+  width: 4em;
+  height: 4em;
+  z-index: 10;
+}
+ul {
+  list-style-type: none;
 }
 a {
   .card {
@@ -49,7 +59,33 @@ a {
   p {
     margin-bottom: 2rem;
   }
-  ul {
-    list-style-type: none;
+}
+.gymkhana {
+  border-radius: 30px;
+  margin: 30px;
+  img {
+    margin: auto;
+    margin-bottom: 10px;
+    height: 150px;
+    border-radius: 50%;
+    display: block;
+  }
+}
+@media (min-width: 960px) {
+  #president {
+    padding: 0px 100px 0px 100px;
+  }
+}
+.sports-card {
+  .card-img-overlay {
+    display: none;
+  }
+  &:hover {
+    .card-img-overlay {
+      display: block;
+    }
+    img {
+      filter: blur(2px);
+    }
   }
 }

@@ -1,0 +1,29 @@
+extends include/base
+
+block title
+  title NISER | Sports and Yoga Club
+
+block body
+  a(href="index.html")
+    .card.back
+      svg.bi.bi-arrow-left-short(width='2em' height='2em' viewbox='0 0 16 16' fill='currentColor' xmlns='http://www.w3.org/2000/svg')
+        path(fill-rule='evenodd' d='M7.854 4.646a.5.5 0 0 1 0 .708L5.207 8l2.647 2.646a.5.5 0 0 1-.708.708l-3-3a.5.5 0 0 1 0-.708l3-3a.5.5 0 0 1 .708 0z')
+        path(fill-rule='evenodd' d='M4.5 8a.5.5 0 0 1 .5-.5h6.5a.5.5 0 0 1 0 1H5a.5.5 0 0 1-.5-.5z')
+  .container
+    .card.img-overlay.text-black
+      img(src="./static/images/sports.png")
+      .card-img-overlay
+        h1
+          br
+          | Sports and Yoga Club
+    .row
+      each val in ["Yoga", "Kabbadi", "Kho-Kho", "Cricket", "Athletics"]
+        .col-lg-3.col-md-4.col-sm-6.col-6
+          .card.sports-card
+            img(src="https://via.placeholder.com/70" alt="image").card-img-top
+            .card-img-overlay.text-black.
+              Captain: name of Captain
+              some other details
+              other details
+            .card-body
+              h3= val
