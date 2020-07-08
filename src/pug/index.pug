@@ -4,48 +4,78 @@ block title
   title Home | NISER - Sports Club
 
 block append body
+  #index-heading
+    img(src="./static/images/blue_logo.png")
+    #index-heading-text
+      h1 NISER Student Affairs
+      p
+        |the address
+        br
+        |for a few lines
+        br
+        |and one more
   .container
-    .card
-      .card-body
-        h1 NISER Student Affairs
     .row
-      .col-lg-4
+      .col-lg-3.col-md-5.col-sm-7.col-7
         .card
-          img(src="https://via.placeholder.com/70").card-img-top
-          .card-body Name and details and age and stuff, really i just have to fill this so it looks good in ps, thats literally all
-      .col-lg-8
-        .card#message
+          .card-body Students
+        .card
+          .card-body Alumni
+        .card
+          .card-body Forms for Students
+        .card
+          .card-body Anti-ragging Information
+      .col-lg-3.col-md-5.col-sm-8.col-8
+        .card
+          .card-body Dosa
+        .card
           .card-body
-            h2 Message
-            p Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. A diam sollicitudin tempor id eu. Eget mauris pharetra et ultrices neque ornare aenean. Quisque id diam vel quam elementum pulvinar etiam non quam. Porttitor rhoncus dolor purus non enim praesent elementum facilisis leo. Tristique et egestas quis ipsum suspendisse ultrices gravida dictum. Aliquet enim tortor at auctor urna nunc id. Ut tristique et egestas quis ipsum suspendisse ultrices. Morbi tristique senectus et netus. Velit dignissim sodales ut eu.
+            Student Campus Life
+        .card
+          .card-body
+            Who to contact when you run info issues?
+        .card
+          .card-body
+            SC-ST-OBC Cell and info
+      .col-lg-3.col-md-5.col-sm-7.col-7
+        a(href="./gymkhana.html")
+          .card.img-overlay
+            img(src="./static/images/gymkhana.jpg").card-img
+            .card-img-overlay
+              h3 Student Gymkhana
+        a(href="./sports_and_yoga.html")
+          .card.img-overlay
+            img(src="./static/images/sports.png")
+            .card-img-overlay
+              h3 Sports and Yoga Club
+        .card
+          .card-body Women's Cell & info
+        a(href="#")
+          .card.img-overlay.text-white
+            img(src="./static/images/science.jpg")
+            .card-img-overlay
+              h3 Science and mathematics club
+      .col-lg-3.col-md-5.col-sm-8.col-8
+        .card
+          .card-body Club Information
+        .card
+          .card-body Gallery
+        a(href="#")
+          .card.img-overlay.text-white
+            img(src="./static/images/art.jpg")
+            .card-img-overlay
+              h3 Arts and Culture Club
+        .card
+          .card-body Councelling Cell for Students
+      .col-lg-3.col-md-5.col-sm-15.col-15
         .card#news-card
           .card-body
-            h2.mb-4 News/Events
+            h3.mb-4 News/Events
             a(href="#")
               h3 News heading
               p.text-muted News text coz why not you know
             a(href="#")
               h3 News heading
               p.text-muted News text coz why not you know a little more to see how long text responds
-      .col-lg-4
-        a(href="./gymkhana.html")
-          .card.img-overlay.text-black
-            img(src="./static/images/gymkhana.jpg").card-img
-            .card-img-overlay
-              h2 Student Gymkhana
-        a(href="./sports_and_yoga.html")
-          .card.img-overlay.text-black
-            img(src="./static/images/sports.png")
-            .card-img-overlay
-              h2 Sports and Yoga Club
-        a(href="#")
-          .card.img-overlay
-            img(src="./static/images/art.jpg")
-            .card-img-overlay
-              h2 Arts and Culture Club
-        a(href="#")
-          .card.img-overlay
-            img(src="./static/images/science.jpg")
-            .card-img-overlay
-              h2 Science and mathematics club
-
+        .card
+          .card-body Structure and disciplinary actions and the commitee
